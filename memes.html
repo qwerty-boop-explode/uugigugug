@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Любимые мемы</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #f2edff;
+        }
+
+        .content {
+            min-height: 100vh;
+            padding-top: 20px;
+        }
+
+        .center {
+            padding-left: calc(50% - 500px);
+            padding-right: calc(50% - 500px);
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        /* Навигация */
+        .page-nav {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .page-nav a {
+            background-color: #7c4dff;
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .page-nav a:hover {
+            background-color: #9a7dff;
+        }
+
+        /* Сетка мемов */
+        .memes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .memes-grid img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content center">
+
+        <!-- НАВИГАЦИЯ СВЕРХУ -->
+        <div class="page-nav">
+            <a href="facts.html">&lt;&lt;&lt;&lt; Предыдущая страница</a>
+            <a href="quotes.html">Следующая страница &gt;&gt;&gt;&gt;</a>
+        </div>
+
+        <h1>Мои любимые мемы</h1>
+
+        <div class="memes-grid">
+            <img src="images/meme1.jpeg" alt="1 мем">
+            <img src="images/meme2.jpeg" alt="2 мем">
+            <img src="images/meme3.png" alt="3 мем">
+            <img src="images/meme4.jpeg" alt="4 мем">
+        </div>
+
+    </div>
+</body>
+</html>
