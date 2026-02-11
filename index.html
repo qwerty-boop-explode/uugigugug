@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя личная страница</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        body {
+            background-color: #f2edff;
+        }
+
+        .content {
+            min-height: 100vh;
+            padding-top: 20px;
+        }
+
+        .center {
+            padding-left: calc(50% - 500px);
+            padding-right: calc(50% - 500px);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 16px;
+            margin: 24px 0;
+        }
+
+        ul {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* НАВИГАЦИЯ */
+        .page-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .page-nav a {
+            background-color: #7c4dff;
+            color: white;
+            text-decoration: none;
+            padding: 12px 26px;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .page-nav a:hover {
+            background-color: #9a7dff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content center">
+
+        <!-- КНОПКА НАВИГАЦИИ СВЕРХУ -->
+        <div class="page-nav">
+            <a href="facts.html">Следующая страница &gt;&gt;&gt;&gt;</a>
+        </div>
+
+        <h1>Крутая личная страница</h1>
+        <h2>Гуся Василия</h2>
+
+        <img src="images/goose.jpeg" alt="Гусь Василий">
+
+        <p>
+            Привет. Это мой проект по изучению фронта, и в нём я хочу рассказать о себе
+            крутые факты и потренировать мой код-стайл.
+        </p>
+
+        <h3>На страничках ты найдёшь</h3>
+
+        <ul>
+            <li>Крутые факты обо мне</li>
+            <li>Мои любимые мемы</li>
+            <li>Мои любимые цитаты</li>
+        </ul>
+
+    </div>
+</body>
+</html>
